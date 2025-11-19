@@ -100,7 +100,7 @@ useEffect(() => {
                         <div className="card-body vt-hidden" data-side="left" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                         <h5 className="card-title">{sb.title}</h5>
                         <h6 className="card-subtitle mb-2 text-body-secondary d-flex justify-content-center align-items-center">
-                            <img src={sb.image} style={{ width: '5rem' }} />
+                            <img src={process.env.PUBLIC_URL+'/'+sb.image} style={{ width: '5rem' }} />
                         </h6>
                         <p className="card-text">{sb.description}</p>
                         </div>
@@ -113,6 +113,7 @@ useEffect(() => {
                     <VerticalTimeline>
                         <VerticalTimelineElement
                             date="2021 - Present"
+                            dateClassName="custom-date"
                             contentStyle={{ background: 'lightblue',}}
                         >
                             <h3 className='text-dark'>Went to Beltei International University</h3>
@@ -120,12 +121,14 @@ useEffect(() => {
 
                         <VerticalTimelineElement
                             date="2013 - 2023"
+                            dateClassName="custom-date"
                         >
                             <h3 className='text-dark'>Went to Beltei International School</h3>
                             <p className='text-dark'>Campus 1, BKK</p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
-                            date="2011 - 20213"
+                            date="2011 - 2013"
+                            dateClassName="custom-date"
                         >
                             <h3 className='text-dark'>Went to Pongro Primary School</h3>
                             <p className='text-dark'>Banteay Mean Chey Province</p>

@@ -93,11 +93,11 @@ function Header(props) {
                     </div>
                 </div>
             </nav>
-            <div className='header-nav' id="headers">
+            <div className='header-nav' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/image/giphy.gif)`,}} id="headers">
                 <div className='container'>
                     <div className='d-flex justify-content-center align-items-center' style={{height:'100vh',marginTop:'50px'}}>
                         <div className='d-flex flex-column gap-5 align-items-center'>
-                        <img src={process.env.PUBLIC_URL +'image/me.JPG'} className='image-fluid rounded-circle' style={{width:'10rem',height:'10rem',border:'5px solid white'}}/> 
+                        <img src={process.env.PUBLIC_URL+'/image/me.jpg'} className='image-fluid rounded-circle' style={{width:'10rem',height:'10rem',border:'5px solid white'}}/> 
                         <h3>
                             HELLO, I'M <span className="typing-text intro">{displayText}</span><span className="cursor">|</span>
                         </h3>
