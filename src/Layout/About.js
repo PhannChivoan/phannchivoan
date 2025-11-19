@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { SwiperSlide,Swiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Pagination,Autoplay } from 'swiper/modules';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 function About(props) {
@@ -83,7 +83,7 @@ useEffect(() => {
                 <Swiper
                 className='mt-2'
                 style={{paddingBottom:'40px',color:'white'}}
-                modules={[Pagination]} 
+                modules={[Pagination,Autoplay]} 
                 pagination={{clickable:true}}
                 spaceBetween={50}
                 slidesPerView={4}
@@ -93,6 +93,12 @@ useEffect(() => {
                     768: { slidesPerView: 2 },
                     0: { slidesPerView: 1 },
                 }}
+                autoplay={{
+                  delay:2000,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                speed={800}
                 >
                     {subject.map((sb,index)=>(
                     <SwiperSlide key={index} >
