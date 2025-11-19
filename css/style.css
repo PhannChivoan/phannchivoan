@@ -355,8 +355,8 @@ textarea.form-control {
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    max-width: 400px;
+    width: 65%;
+    max-width: 500px;
     background: white;
     border-radius: 20px;
     padding: 8px 10px;
@@ -367,18 +367,26 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
     .bottom-nav {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
     }
 }
 
 .nav-item {
-    display: inline-block;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 8px 15px;
+    padding: 8px 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     border-radius: 12px;
+    min-width: 0; /* Prevents flex items from overflowing */
 }
 
 .nav-item i {
@@ -394,6 +402,7 @@ textarea.form-control {
     color: #6c757d;
     transition: color 0.3s ease;
     display: block;
+    white-space: nowrap;
 }
 
 .nav-item:hover i,
@@ -418,6 +427,8 @@ textarea.form-control {
     border-radius: 10px;
     transition: all 0.3s ease;
 }
+
+/* Header Navigation */
 .head-nav {
     transition: all 0.3s ease;
 }
@@ -455,7 +466,6 @@ textarea.form-control {
     width: 100%;
 }
 
-/* Active state */
 .head-nav a.active {
     color: #14b8a6;
 }
