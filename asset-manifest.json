@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/phannchivoan/static/css/main.54a97f38.css",
-    "main.js": "/phannchivoan/static/js/main.2d8d9059.js",
+    "main.js": "/phannchivoan/static/js/main.f2fbefe4.js",
     "static/js/453.6264690d.chunk.js": "/phannchivoan/static/js/453.6264690d.chunk.js",
     "index.html": "/phannchivoan/index.html",
     "main.54a97f38.css.map": "/phannchivoan/static/css/main.54a97f38.css.map",
-    "main.2d8d9059.js.map": "/phannchivoan/static/js/main.2d8d9059.js.map",
+    "main.f2fbefe4.js.map": "/phannchivoan/static/js/main.f2fbefe4.js.map",
     "453.6264690d.chunk.js.map": "/phannchivoan/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54a97f38.css",
-    "static/js/main.2d8d9059.js"
+    "static/js/main.f2fbefe4.js"
   ]
 }
