@@ -13,19 +13,21 @@ function Contact(props) {
                             <div className="col-md-7">
                                 <div className="contact-wrap">
                                 <h3>Get in touch</h3>
-                                <form id="contactForm">
+                                <form id="contactForm" method="post" action="https://formspree.io/f/mzzokoyy">
                                     <div className="row">
                                     <div className="col-md-6 mb-3">
                                         <input
                                         type="text"
                                         className="form-control"
                                         placeholder="Name"
+                                        name='name'
                                         required=""
                                         />
                                     </div>
                                     <div className="col-md-6 mb-3">
                                         <input
                                         type="email"
+                                        name='email'
                                         className="form-control"
                                         placeholder="Email"
                                         required=""
@@ -35,6 +37,7 @@ function Contact(props) {
                                         <input
                                         type="text"
                                         className="form-control"
+                                        name='subject'
                                         placeholder="Subject"
                                         required=""
                                         />
@@ -43,6 +46,7 @@ function Contact(props) {
                                         <textarea
                                         className="form-control"
                                         placeholder="Message"
+                                        name='message'
                                         required=""
                                         defaultValue={""}
                                         />
