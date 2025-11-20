@@ -30,7 +30,7 @@ function Contact(props) {
                                         name='email'
                                         className="form-control"
                                         placeholder="Email"
-                                        required=""
+                                        required
                                         />
                                     </div>
                                     <div className="col-md-12 mb-3">
@@ -47,7 +47,7 @@ function Contact(props) {
                                         className="form-control"
                                         placeholder="Message"
                                         name='message'
-                                        required=""
+                                        required
                                         defaultValue={""}
                                         />
                                     </div>
